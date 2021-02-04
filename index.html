@@ -15,18 +15,42 @@
   </div>
   <form id="stress-test-survey">
     <div class="form-group">
-      <h3>Negatively affected by stress</h3>
+      <h3>Please select the option that describes 2020 for you:</h3>
       <input type="checkbox" name="negative" value="sleep">Not enough sleep.<br>
       <input type="checkbox" name="negative" value="overwhelmed">Feeling overwhelmed.<br>
       <input type="checkbox" name="negative" value="jobless">Loss of a job.<br>
+      <input type="checkbox" name="negative" value="covid19">Got Covid 19.<br>
+      <input type="checkbox" name="negative" value="dogdied">Loss of dog.<br>
     </div>
     <button type="submit">Submit</button>
   </form>
-  <div id="negative-response">
-    <p> You stink at taking care of yourself </p>
-  </div>
+  <span id="response1">
+    <p> You arent too bad at handling stress! </p>
+    
+  <span id="response2">
+    <p> You could use some help handling stress!</p>
+    
+  <span id="response3">
+    <p> Maybe life is just not your thing... </p>
+  </span>
 </body>
 </html>
 
+<!-- Co-authored-by: Nick Hennessy <njhnny@gmail.com> -->
+<!-- Co-authored-by: Faisal Rana <inquisitive@gmail.com> -->
 
-Co-authored-by: Nick Hennessy <njhnny@gmail.com>
+
+
+
+  // $("input:checkboxes[name=negative-responses:checked")
+
+  /*
+  $("input:checkbox[name=work-transportation]:checked").each(function(){
+    const workTransportationMode = $(this).val();
+    $('#work-responses').append(workTransportationMode + "<br>");
+  });
+  
+    var arrayNCheckBoxes= []
+    let negativeCheckBoxes = $("input:checkbox[name=negative-response]:checked")
+    //    let negativeCheckBoxNumber = $("input:checkbox[name=negative]:checked").length;
+  
